@@ -10,6 +10,11 @@ module.exports = {
     "../lib/*_web/**/*.*ex"
   ],
   theme: {
+    extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -27,6 +32,11 @@ module.exports = {
         light: '#F7F8FD',
         DEFAULT: '#F2F4FF',
         dark: '#647196'
+      },
+      gradientColors: {
+        to: '#E84D70',
+        via: '#A337F6',
+        from: '#28A7ED'
       }
     }
   },

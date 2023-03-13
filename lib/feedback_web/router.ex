@@ -17,7 +17,7 @@ defmodule FeedbackWeb.Router do
   scope "/", FeedbackWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", HomeLive
   end
 
   # Other scopes may use custom stacks.

@@ -52,7 +52,7 @@ defmodule FeedbackWeb do
   def live_view do
     quote do
       use Phoenix.LiveView,
-        layout: {FeedbackWeb.Layouts, :app}
+        layout: false
 
       unquote(html_helpers())
     end
@@ -86,6 +86,9 @@ defmodule FeedbackWeb do
       # Core UI components and translation
       import FeedbackWeb.CoreComponents
       import FeedbackWeb.Gettext
+
+      # Custom UI components
+      alias FeedbackWeb.CustomComponents
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS

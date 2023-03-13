@@ -3,3 +3,26 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+@font-face {
+    font-family: 'Jost';
+    src: url("/fonts/Jost-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url("/fonts/Jost-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url("/fonts/Jost-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@layer base {
+    html {
+        font-family: Jost, system-ui, sans-serif;
+    }
+}
